@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfApp1.Forms.NewGameWindows"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.Forms"
+        mc:Ignorable="d"
+        Title="NewGameWindows" Height="450" Width="800">
+    <Grid>
+        <StackPanel>
+            <StackPanel>
+                <Label Margin="5">Укажите имя игрока</Label>
+                <TextBox x:Name="tbName" Width="50"/>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal">
+                <Label Margin="5">Выбирете предмет</Label>
+                <ComboBox Margin="5" MinWidth="50" Name="cbSub"></ComboBox>
+            </StackPanel>
+
+            <StackPanel>
+                <Label Margin="5">Укажите пол игрока</Label>
+                <ComboBox Margin="5" Name="cbGender" MinWidth="50"></ComboBox>
+            </StackPanel>
+
+            <Button Name="btcreateGame" Click="btcreateGame_Click">Создать</Button>
+        </StackPanel>
+    </Grid>
+</Window>
